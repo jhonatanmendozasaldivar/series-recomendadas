@@ -1,0 +1,27 @@
+<html ng-app>
+<head>
+	<title>mis series recomendadas</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+<body ng-init="series = [
+'breaking Bad',
+'battle of gords',
+'house of cards',
+'narcos'
+]">
+<h1>mis series recomendadas</h1>
+<p>marca las series que ya viste</p>
+	<ul>
+
+		<li ng-repeat = "serie in series">
+			<input type = "checkbox"> {{ serie }}
+		</li>
+
+	</ul>
+	<h2>agrega los tuyos</h2>
+	<input type="text" placeholder="nueva serie">
+	<button>agregar el listado</button>
+	
+
+</body>
+</html>
